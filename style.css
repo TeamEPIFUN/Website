@@ -1,10 +1,3 @@
-/*-----------------------------------------------------------------------------------
-	EPIFUN
-	About: A shiny new Blocs website.
-	Author: Tom-Eliott Herfray
-	Version: 1.0
-	Built with Blocs
------------------------------------------------------------------------------------*/
 body{
 	margin:0;
 	padding:0;
@@ -16,13 +9,6 @@ body{
 .page-container{overflow: hidden;} /* Prevents unwanted scroll space when scroll FX used. */
 a,button{transition: background .3s ease-in-out;outline: none!important;} /* Prevent blue selection glow on Chrome and Safari */
 a:hover{text-decoration: none; cursor:pointer;}
-
-
-/* Preloader */
-
-.page-preloader{position: fixed;top: 0;bottom: 0;width: 100%;z-index:100000;background:#FFFFFF url("img/pageload-spinner.gif") no-repeat center center;animation-name: preloader-fade;animation-delay: 2s;animation-duration: 0.5s;animation-fill-mode: both;}
-.preloader-complete{animation-delay:0.1s;}
-@keyframes preloader-fade {0% {opacity: 1;visibility: visible;}100% {opacity: 0;visibility: hidden;}}
 
 /* = Blocs
 -------------------------------------------------------------- */
@@ -213,6 +199,12 @@ a:hover{text-decoration: none; cursor:pointer;}
 	border-color:rgba(0,0,0,.3);
 }
 
+/* Row Margin Offsets */
+
+.voffset{
+	margin-top:30px;
+}
+
 
 /* = NavBar
 -------------------------------------------------------------- */
@@ -328,9 +320,6 @@ button{
 .icon-md{
 	font-size:30px!important;
 }
-.icon-lg{
-	font-size:60px!important;
-}
 
 
 
@@ -385,6 +374,11 @@ button{
 	stroke-linecap:round;
 }
 
+/* Hide Object */
+.object-hidden{
+	display:none;
+}
+
 /* = Custom Styling
 -------------------------------------------------------------- */
 
@@ -401,7 +395,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	width:80px;
 }
 .img-style{
-	width:129px;
+	width:60px;
 	border-radius:16px 16px 16px 16px;
 }
 .h1-voici-epifun-style{
@@ -428,7 +422,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	width:100%;
 }
 .p-style{
-	font-size:10px;
+	font-size:20px;
+	font-family:"Montserrat";
 }
 .img-bloc-3-style{
 	width:263px;
@@ -582,7 +577,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	height:70px;
 }
 .btn-style{
-	width:26.23%;
+	width:24.3%;
 }
 .img-placeholder-us-style{
 	width:113px;
@@ -607,6 +602,26 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .link-style{
 	font-weight:bold;
+}
+.red-bg-gradient{
+	background:linear-gradient(180deg, #FABF68, #F02277);
+}
+.h6-wtf… -style{
+	font-size:10px;
+}
+.feat-sub-header{
+	font-size:20px;
+}
+.feat-icon-trans{
+	background-color:rgba(255,255,255,0.20);
+	margin-bottom:10px;
+	border-radius:10px 10px 10px 10px;
+}
+.feat-header{
+	font-weight:bold;
+}
+.purple-gradient-bg{
+	background:linear-gradient(274deg, #9809FF  0%, #8B74FD 100%);
 }
 
 /* = Colour
@@ -644,6 +659,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .tc-denim{
 	color:#125FBC!important;
 }
+.tc-white-2{
+	color:rgba(255,255,255,0.298039)!important;
+}
 
 /* Button colour styles */
 
@@ -669,6 +687,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .ltc-denim:hover{
 	color:#0e4c96!important;
+}
+.ltc-cyan-process{
+	color:#00A4E1!important;
+}
+.ltc-cyan-process:hover{
+	color:#0083b4!important;
 }
 
 /* Icon colour styles */
@@ -897,6 +921,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	.btn-bloc-20-style{
 		width:86.63%;
 	}
+	.feature-details-col{
+		margin-bottom:40px;
+		text-align:center;
+	}
 	
 }
 
@@ -919,6 +947,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	}
 	.btn-bloc-20-style{
 		width:54.56%;
+	}
+	.feature-details-col{
+		text-align:center;
 	}
 	
 }
